@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - dealer@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="dealer">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="blog"/>
+    <schema id="3" name="cdcol"/>
+    <schema id="4" name="chikungunya"/>
+    <schema id="5" name="doli"/>
+    <schema id="6" name="edesur"/>
+    <schema id="7" name="information_schema"/>
+    <schema id="8" name="maidservicedeal"/>
+    <schema id="9" name="maidserv_maid"/>
+    <schema id="10" name="myapp"/>
+    <schema id="11" name="mysql"/>
+    <schema id="12" name="my_new_app"/>
+    <schema id="13" name="news_manager"/>
+    <schema id="14" name="notes"/>
+    <schema id="15" name="performance_schema"/>
+    <schema id="16" name="phpmyadmin"/>
+    <schema id="17" name="provincias"/>
+    <schema id="18" name="smartpub_stage"/>
+    <schema id="19" name="spectre"/>
+    <schema id="20" name="test"/>
+    <schema id="21" name="tienda_mascotas"/>
+    <schema id="22" name="webauth"/>
+    <schema id="23" name="wordpress"/>
+    <table id="24" parent="1" name="vehicles"/>
+    <column id="25" parent="24" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(10) unsigned|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="26" parent="24" name="status">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="27" parent="24" name="brand">
+      <data-type>varchar(80)|0</data-type>
+    </column>
+    <column id="28" parent="24" name="model">
+      <data-type>varchar(80)|0</data-type>
+    </column>
+    <column id="29" parent="24" name="description">
+      <data-type>text|0</data-type>
+    </column>
+    <column id="30" parent="24" name="year">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="31" parent="24" name="price">
+      <data-type>varchar(15)|0</data-type>
+    </column>
+    <column id="32" parent="24" name="color">
+      <data-type>varchar(15)|0</data-type>
+    </column>
+    <column id="33" parent="24" name="gas">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="34" parent="24" name="transmition">
+      <data-type>varchar(25)|0</data-type>
+    </column>
+    <key id="35" parent="24" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
